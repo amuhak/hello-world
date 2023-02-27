@@ -11,7 +11,7 @@ class helloworld
             while (flag)
             {
                 counter++;
-                char c =rand();
+                char c =(char)((Math.random()*91)+32);
                 if(c==s1.charAt(i))
                 {
                     ans+=c;
@@ -23,10 +23,5 @@ class helloworld
             }
         }
         System.out.println("No of guesses "+counter);
-    }
-    static char rand()
-    {
-        char a=(char)((Math.random()*91)+32);
-        return a;
     }
 }
